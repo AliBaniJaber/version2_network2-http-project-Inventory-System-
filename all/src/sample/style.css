@@ -1,0 +1,160 @@
+#nameinput{
+    -fx-background-color: red;
+}
+#al{
+    -fx-background-color: aqua;
+}
+#index
+{
+    -fx-background-color: #3e3939;
+}
+
+
+#userimge{
+    -fx-border-radius: 25px;
+}
+#loginleftside{
+    -fx-font-size: 25px;
+}
+#title{
+    -fx-font-size: 25px;
+
+}
+#login {
+
+    -fx-font-size: 20px;
+    -fx-margin: 4px 2px;
+    -fx-transition-duration: 0.4s;
+
+}
+
+
+#login {
+
+    -fx-color: rgba(0, 0, 0, 0.43);
+    -fx-border: 2px solid #f44336;
+}
+
+#login:hover {
+    -fx-background-color: #3665f4;
+    -fx-color: white;
+}
+#contrpal_panel{
+    -fx-background-color: rgba(35, 32, 32, 0.22);
+}
+#changepassword {
+    -fx-font-size: 20px;
+    -fx-margin: 4px 2px;
+    -fx-transition-duration: 0.4s;
+    -fx-border: 2px solid #555555;
+}
+
+#changepassword:hover {
+    -fx-background-color: #ff7315;
+    -fx-color: white;
+}
+#allProducts{
+    -fx-font-size: 20px;
+    -fx-margin: 4px 2px;
+    -fx-transition-duration: 0.4s;
+    -fx-border: 2px solid #555555;
+
+}
+#allProducts:hover
+{
+    -fx-background-color: #ff7315;
+    -fx-color: white;
+}
+#logout{
+    -fx-font-size: 20px;
+    -fx-margin: 4px 2px;
+    -fx-transition-duration: 0.4s;
+    -fx-border: 2px solid #555555;
+}
+#logout:hover{
+    -fx-background-color: #ff7315;
+    -fx-color: white;
+}
+
+#add_item{
+    -fx-font-size: 20px;
+    -fx-margin: 4px 2px;
+    -fx-transition-duration: 0.4s;
+    -fx-border: 2px solid #555555;
+}
+#add_item:hover{
+    -fx-background-color: #ff7315;
+    -fx-color: white;
+}
+#delet_item{
+    -fx-font-size: 20px;
+    -fx-margin: 4px 2px;
+    -fx-transition-duration: 0.4s;
+    -fx-border: 2px solid #555555;
+}
+#delet_item:hover{
+    -fx-background-color: #ff7315;
+    -fx-color: white;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #86208D;
+}
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+    -fx-cell-size: 35;
+    -fx-alignment: center-left;
+    -fx-background-color: #29292d;
+    -fx-border-color: #29292D;
+    -fx-text-fill: lightgray;
+    -fx-alignment: CENTER_LEFT;
+
+}
+.table-row-cell:selected {
+    -fx-background-color: whitesmoke;
+    -fx-text-background-color:  #6622CC;
+
+
+}
+
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive( #6622CC,80%);
+
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #7a54b4,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+    -fx-font-size: 25px;
+    -fx-background-color:beige;
+
+}
+
+#edit_item{
+    -fx-font-size: 20px;
+    -fx-margin: 4px 2px;
+    -fx-transition-duration: 0.4s;
+    -fx-border: 2px solid #555555;
+}
