@@ -99,10 +99,10 @@
                   <Font size="29.0" />
                </font>
             </Label>
-            <MenuButton alignment="CENTER" layoutX="893.0" layoutY="285.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="206.0" style="-fx-background-color: #ffffff; -fx-border-color: #86208D; -fx-background-radius: 200; -fx-border-radius: 200;" text="Apache">
+            <MenuButton fx:id="Select_Method" alignment="CENTER" layoutX="893.0" layoutY="285.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="206.0" style="-fx-background-color: #ffffff; -fx-border-color: #86208D; -fx-background-radius: 200; -fx-border-radius: 200;" text="Server to access">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
+                <MenuItem mnemonicParsing="false" onAction="#php_server" text="PHP-Server" />
+                <MenuItem mnemonicParsing="false" onAction="#java_server" text="JAVA-servlet" />
               </items>
             </MenuButton>
             <Separator layoutX="886.0" layoutY="406.0" prefHeight="2.0" prefWidth="220.0" />
@@ -111,10 +111,10 @@
                   <Font size="29.0" />
                </font>
             </Label>
-            <MenuButton alignment="CENTER" layoutX="895.0" layoutY="531.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="206.0" style="-fx-background-color: #ffffff; -fx-border-color: #86208D; -fx-background-radius: 200; -fx-border-radius: 200;" text="Apache">
+            <MenuButton fx:id="Select_Server" alignment="CENTER" layoutX="895.0" layoutY="531.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="206.0" style="-fx-background-color: #ffffff; -fx-border-color: #86208D; -fx-background-radius: 200; -fx-border-radius: 200;" text="Method-request">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Action 1" />
-                  <MenuItem mnemonicParsing="false" text="Action 2" />
+                  <MenuItem mnemonicParsing="false" onAction="#post_method" text="POST" />
+                  <MenuItem mnemonicParsing="false" onAction="#get_method" text="GET" />
                </items>
             </MenuButton>
             <Label fx:id="Employee_ID" alignment="CENTER" layoutX="297.0" layoutY="20.0" prefHeight="48.0" prefWidth="246.0" style="-fx-background-color: #86208D; -fx-background-radius: 200;" text="Employee ID" textFill="WHITE">

@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.geometry.Insets;
 import javafx.scene.control.*;
 import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
@@ -53,7 +54,13 @@ public class Controller {
 
     My_HttpURL obj_request=new My_HttpURL();
 
-    String type_of_request="POST";
+    String type_of_request="GET";
+    String name_server=null;
+    @FXML
+    MenuButton Select_Server;
+
+    @FXML
+    MenuButton Select_Method;
 
     @FXML
     public void handeLAllRequest(ActionEvent  event)
@@ -204,11 +211,36 @@ public class Controller {
                 page1.setVisible(true);
                 Employee_ID.setText(id_user);
 
+
+
             }
         }
 
     }
-    String result_Settings;
+
+  @FXML
+  public void php_server(){
+
+        name_server="php";
+  }
+  @FXML
+  public void java_server()
+  {
+       name_server="java";
+  }
+  @FXML
+  public void post_method()
+  {
+      type_of_request="POST";
+  }
+  @FXML
+  public void get_method()
+  {
+        type_of_request="GET";
+  }
+
+
+
 
  private void add_data_to_table(String method ){
         dataTeable.getItems().clear();
@@ -245,19 +277,7 @@ public class Controller {
 
     }
 
-
-    @FXML
-    public void handelSettings()
-    {
-
-    }
-
-
-
-
-
-     private void show_info_of_product(String method)
-     {
+ private void show_info_of_product(String method) {
 
 
        TextInputDialog dialog1 = new TextInputDialog("walter");
@@ -338,9 +358,8 @@ public class Controller {
 
    }
 
-    @FXML
-    public void handel_add_new_product(String  method )
-    {
+ @FXML
+ public void handel_add_new_product(String  method ) {
 
         TextInputDialog dialog1 = new TextInputDialog("walter");
         dialog1.setTitle("Withdraw #Items of a Specific Product from Inventory");
@@ -515,15 +534,16 @@ public class Controller {
 
     }
 
-    @FXML
-    public void logoutfunction()
-    {
+ @FXML
+ public void logoutfunction()
+ {
         page1.setVisible(false);
         login_panel.setVisible(true);
-    }
 
-    public void changepasswordfunction(String method)
-    {
+ }
+
+ public void changepasswordfunction(String method)
+ {
 
         try {
             TextInputDialog dialog = new TextInputDialog("walter");
@@ -585,15 +605,13 @@ public class Controller {
         }
         catch (Exception e )
         {
-
         }
 
 
     }
-
-    @FXML
-    public void edit_item_function()
-    {
+ @FXML
+ public void edit_item_function()
+ {
         TextInputDialog dialog = new TextInputDialog("walter");
         dialog.setTitle("edit info of prodact ");
         dialog.setHeaderText("edit info ");
@@ -602,16 +620,12 @@ public class Controller {
 
         Optional<String> result = dialog.showAndWait();
         if (!result.isEmpty()){
-
-
-
         }
 
 
     }
-    @FXML
-    public  void delet_item_function()
-    {
+ @FXML
+ public  void delet_item_function() {
         TextInputDialog dialog = new TextInputDialog("walter");
         dialog.setTitle("delete prodact ");
         dialog.setHeaderText("delet  ");
@@ -623,8 +637,7 @@ public class Controller {
 
 
 
-        }
-    }
+        } }
 
 
 }

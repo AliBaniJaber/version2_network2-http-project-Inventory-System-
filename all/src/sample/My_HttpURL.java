@@ -18,7 +18,21 @@ import java.util.*;
 
 class My_HttpURL{
 
-     String GET_URL_products="http://localhost/network2_Inventory/products.php";
+     String URL_products_php="http://localhost/network2_Inventory/products.php";
+     String URLusers_php="http://localhost/network2_Inventory/userpage.php";
+     String URL_NET2_servlet="http://localhost:8084/Network2_Servlet_war_exploded/";
+
+
+
+
+
+
+
+
+
+
+
+
     StringBuffer response;
 
      void send_GET_method_to_add_new_item(String name , int amount , double pricPerItem)
